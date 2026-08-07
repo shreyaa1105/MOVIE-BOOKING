@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Booking</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Header -->
+
+<header>
+
+<h2>🎬 MovieBook.</h2>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#movies">Movies</a>
+<a href="#offers">Offers</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<!-- Hero Section -->
+
+<section class="hero" id="home">
+
+<div class="overlay">
+
+<h1>Book Your Favorite Movie</h1>
+
+<p>Watch Latest Movies in Premium Theatres</p>
+
+<button id="bookNow">Book Now</button>
+
+</div>
+
+</section>
+
+<!-- Movies -->
+
+<section class="movies" id="movies">
+
+<h2>Now Showing</h2>
+
+<div class="movie-container">
+
+<div class="card">
+
+<img src="./image/21d62106e83e8bddfa41024dfc195356.jpg" alt="Avengers">
+
+<h3>Avengers</h3>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+<button class="bookBtn">Book Ticket</button>
+
+</div>
+
+<div class="card">
+
+<img src="./image/MV5BMmU5NGJlMzAtMGNmOC00YjJjLTgyMzUtNjAyYmE4Njg5YWMyXkEyXkFqcGc@._V1_.jpg" alt="Batman">
+
+<h3>Batman</h3>
+
+<p>⭐⭐⭐⭐</p>
+
+<button class="bookBtn">Book Ticket</button>
+
+</div>
+
+<div class="card">
+
+<img src="./image/Avatar_(2009_film)_poster.jpg" alt="Avatar">
+
+<h3>Avatar</h3>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+<button class="bookBtn">Book Ticket</button>
+
+</div>
+
+<div class="card">
+
+<img src="./image/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Spider Man">
+
+<h3>Spider Man</h3>
+
+<p>⭐⭐⭐⭐⭐</p>
+
+<button class="bookBtn">Book Ticket</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Booking -->
+
+<section class="booking" id="booking">
+
+<h2>Book Ticket</h2>
+
+<form id="bookingForm">
+
+<input
+type="text"
+id="name"
+placeholder="Your Name"
+required>
+
+<select id="movie" required>
+
+<option value="">Select Movie</option>
+
+<option>Avengers</option>
+
+<option>Batman</option>
+
+<option>Avatar</option>
+
+<option>Spider Man</option>
+
+</select>
+
+<select id="seat" required>
+
+<option value="">Select Seats</option>
+
+<option>1</option>
+
+<option>2</option>
+
+<option>3</option>
+
+<option>4</option>
+
+</select>
+
+<input
+type="date"
+id="date"
+required>
+
+<button type="submit">
+Confirm Booking
+</button>
+
+</form>
+
+</section>
+
+<!-- Offers -->
+
+<section id="offers" class="movies">
+
+<h2>Special Offers</h2>
+
+<div class="movie-container">
+
+<div class="card">
+<h3>🍿 Combo Offer</h3>
+<p>Get Popcorn + Coke at 30% OFF</p>
+</div>
+
+<div class="card">
+<h3>🎟 Student Offer</h3>
+<p>Flat 20% OFF on Student ID</p>
+</div>
+
+<div class="card">
+<h3>💳 Bank Offer</h3>
+<p>15% Cashback on Credit Cards</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact" class="booking">
+
+<h2>Contact Us</h2>
+
+<p>Email : support@moviebook.com</p>
+
+<p>Phone : +91 9876543210</p>
+
+<p>Address : Mumbai, Maharashtra</p>
+
+</section>
+
+<!-- Popup -->
+
+<div id="popup">
+
+<div class="popup-content">
+
+<h2>🎉 Booking Successful</h2>
+
+<p>Enjoy Your Movie!</p>
+
+<button onclick="closePopup()">Close</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
