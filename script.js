@@ -1,16 +1,42 @@
-const form = document.getElementById("bookingForm");
-const popup = document.getElementById("popup");
+// Book Now Button
+document.getElementById("bookNow").addEventListener("click", function () {
+    document.getElementById("booking").scrollIntoView({
+        behavior: "smooth"
+    });
+});
 
-form.addEventListener("submit", function(e){
+// Book Ticket Buttons
+const bookButtons = document.querySelectorAll(".bookBtn");
 
-e.preventDefault();
+bookButtons.forEach(button => {
 
-popup.style.display = "flex";
+    button.addEventListener("click", function () {
+
+        const movieName =
+            this.parentElement.querySelector("h3").innerText;
+
+        document.getElementById("movie").value = movieName;
+
+        document.getElementById("booking").scrollIntoView({
+            behavior: "smooth"
+        });
+
+    });
 
 });
 
-function closePopup(){
+// Booking Form
+document.getElementById("bookingForm").addEventListener("submit", function (e) {
 
-popup.style.display = "none";
+    e.preventDefault();
+
+    document.getElementById("popup").style.display = "flex";
+
+});
+
+// Close Popup
+function closePopup() {
+
+    document.getElementById("popup").style.display = "none";
 
 }
